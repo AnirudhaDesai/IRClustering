@@ -10,11 +10,15 @@
   <name>Clustering</name>
   <url>http://maven.apache.org</url>
 
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <nd4j.version>0.9.1</nd4j.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
 
   </properties>
+
 
   <dependencies>
     <dependency>
@@ -40,6 +44,17 @@
           <artifactId>nd4j-native-platform</artifactId>
           <version>${nd4j.version}</version>
       </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.7.5</version>
+    </dependency>
   </dependencies>
+
 
 </project>

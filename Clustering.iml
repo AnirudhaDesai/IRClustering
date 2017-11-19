@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -38,7 +38,6 @@
     <orderEntry type="library" name="Maven: org.nd4j:nd4j-native-api:0.9.1" level="project" />
     <orderEntry type="library" name="Maven: org.nd4j:nd4j-buffer:0.9.1" level="project" />
     <orderEntry type="library" name="Maven: org.nd4j:nd4j-api:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.10" level="project" />
     <orderEntry type="library" name="Maven: org.nd4j:jackson:0.9.1" level="project" />
     <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.12" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.woodstox:stax2-api:3.1.4" level="project" />
@@ -61,5 +60,8 @@
     <orderEntry type="library" name="Maven: org.nd4j:nd4j-native:macosx-x86_64:0.9.1" level="project" />
     <orderEntry type="library" name="Maven: org.nd4j:nd4j-native:windows-x86_64:0.9.1" level="project" />
     <orderEntry type="library" name="Maven: org.nd4j:nd4j-native:linux-ppc64le:0.9.1" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.5" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.5" level="project" />
+    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
   </component>
 </module>
