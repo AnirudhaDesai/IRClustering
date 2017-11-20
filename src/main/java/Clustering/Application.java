@@ -3,6 +3,7 @@ package Clustering;
 import org.apache.log4j.BasicConfigurator;
 import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.factory.Nd4j;
+import org.nd4j.linalg.ops.transforms.Transforms;
 
 import java.io.IOException;
 
@@ -35,10 +36,16 @@ public class Application {
         Clustering clustering = new Clustering(isCompressed);
 
 
-        INDArray A = Nd4j.ones(2,2);
+        INDArray A = Nd4j.ones(3,2);
         INDArray B = Nd4j.ones(1,2);
         B.put(0,0,5);
+        B.put(0,1,6);
+        INDArray temp = Transforms.allCosineDistances(A,B,1);
+
+        double t1 = Transforms.cosineDistance(A.getRow(0),B);
+        double t2 = Transforms.cosineDistance(A.getRow(1),B);
         System.out.println("B Min : "+B.amin(1));
+        System.out.println("B norm : "+ B.norm2Number());
         INDArray prod = A.mmul(B.transpose());
         System.out.println(prod);
 
